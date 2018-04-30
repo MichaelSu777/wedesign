@@ -1,0 +1,140 @@
+html {
+    margin:0;
+	padding:0;
+	height: 100%;
+	font-family: Raleway;
+}
+body {
+	margin: 0;
+	height: 100%;
+}
+ul li a {
+    position: relative;
+}
+a {
+    color: navy;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none !important;
+}
+#footer {
+    animation: becomeVisible 6s ease forwards;
+    width: 100%;
+    position: absolute;
+    bottom: -10000px;
+    height: 38%;
+}
+.social-media {
+	display: block;
+	width: 50px;
+}
+.social-media:hover {
+    transform:scale(1.15);
+}
+#footer-logo {
+	height: 49px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+}
+#buyorderbtn {
+	color: navy;
+	opacity: 1.0;
+	top: 33px;
+	right: 10px;
+}
+#contact-us {
+	left: 20px;
+	top: 50px;
+	width: 100px;
+}
+#social-media-container {
+	width: 200px;
+	position: relative;
+	margin: auto;
+	top: -30px;
+	display: flex;
+	justify-content: space-between;
+}
+#social-media-container div div {
+	top: 105%;
+}
+.type-wrap {
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.arrow {
+	position: fixed;
+	font-size: 100px;
+	color: gray;
+	z-index: 3;
+	background: transparent;
+	user-select: none;
+	cursor: default;
+}
+.button-white, .button {
+    padding: 10px !important;
+	cursor: pointer;
+	transition: 0.08s ease-in;
+}
+.button {
+    border: solid navy 2px;
+    color: navy;
+}
+.button, .button-white {
+	position: relative;
+}
+.button-white {
+	border: solid white 2px;
+    color: white;
+}
+.button-white:hover {
+	color: navy;
+}
+.button:hover {
+	color: white;
+}
+.button:before, .button-white:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	top: 0;
+	z-index: -3;
+	transition: right 0.5s ease;
+}
+.button:before {
+	background: navy;
+}
+.button-white:before {
+	background: white;
+}
+.button:hover:before, .button-white:hover:before {
+	right: 0;
+}
+.underline, .hide-underline {
+    position: absolute;
+    width: 0%;
+    background: navy;
+    z-index: 1;
+   	top: 80%;
+   	height: 2px;
+}
+.underline-container {
+    position: relative;
+    display: inline-block;
+    animation: bounceDown 0.5s 1 ease forwards;
+}
+.underline-container:hover {
+    animation: bounceUp 0.5s 1 ease forwards;
+}
+.noselect {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,21 @@
+.img {
+    display: block;
+}
+.large-img {
+    width: 53.25vw; height: 40vw;
+}
+.small-img {
+    width: 26.5vw; height: 20vw;
+}
+.medium-img {
+    width: 53.25vw; height: 20vw;
+}
+.overlay {
+    width: inherit;
+    height: 0;
+    position: absolute;
+    background: purple;
+}
+table, td {
+    padding: 0;
+}

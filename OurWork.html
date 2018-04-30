@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title"></title>
+
+    	<meta name="keywords" />
+    	<meta name="author" />
+    	<meta name="charset" />
+    	<meta name="description" />
+    	<meta name="viewport" />
+    	<meta name="json" data-src="files/json/OurWork.json" />
+    	
+    	<link name="icon" rel="icon" type="image/x-icon" />
+	
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="files/css/Animation.css" type="text/css"/>
+		<link rel="stylesheet" href="files/css/css.css" type="text/css" />
+		<link rel="stylesheet" href="files/css/NavBar.css" type="text/css" />
+		<link rel="stylesheet" href="files/css/OurWork.css" type="text/css" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="files/js/javascript.js"></script>
+		<script type="text/javascript" src="files/js/Animation.js"></script>
+		<script type="text/javascript" src="files/js/OurWork.js"></script>
+		
+    </head>
+    
+    <body style="background: black;">
+        <div id="dropdown-button" style="position:absolute;"></div>
+	
+		<div id="menu-dropdown">
+			<div id="dropdown-items" style="line-height: 14vh;">
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="home-dropdown" href="http://www.WeDesign.com">Home</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="productsandservices-dropdown" href="Products-Services.html">Products and Services</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="ourwork-dropdown" href="OurWork.html">Our Work</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="aboutus-dropdown" href="About.html">About Us</a>
+				</div>
+				<br><br>
+				<div class="dropdown-dropdown-item">Who We Are</div>
+				<div class="seperator">/</div>
+				<div class="dropdown-dropdown-item">Company Profile</div>
+				<div class="seperator">/</div>
+				<div class="dropdown-dropdown-item">Contact Us</div>
+				<div class="seperator">/</div>
+				<div class="dropdown-dropdown-item">Mission Statement</div>
+			</div>
+		</div>
+		
+		<div id="body-div" style="height: 100%;">
+			<div id="navBar">
+				<div id="menu">
+					<div id="menup2">
+						<div style="width: 600px; display: table;">
+							<img id="logo-img" class="noselect" src="files/Icon/Logo_white.png" />
+							<ul id="menu-list">
+								<li>
+									<div class="underline-container">
+										<div class="underline"></div>
+										<div class="hide-underline"></div>
+										<a class="nav-link desktopMenuLink" id="home" href="http://www.WeDesign.com">Home</a>
+									</div>
+								</li>
+								<li>
+									<div class="underline-container">
+										<div class="underline"></div>
+										<div class="hide-underline"></div>
+										<a class="nav-link desktopMenuLink" id="productsandservices" href="Products-Services.html">Products and Services</a>
+									</div>
+								</li>
+								<li>
+									<div class="underline-container">
+										<div class="underline"></div>
+										<div class="hide-underline"></div>
+										<a class="nav-link desktopMenuLink" id="ourwork" href="Our-Work.html">Our Work</a>
+									</div>
+								</li>
+								<li>
+									<div class="underline-container">
+										<div class="underline" onmouseover="showDropdown('about-us-dropdown', 'aboutus');"></div>
+										<div class="hide-underline" onmouseover="showDropdown('about-us-dropdown', 'aboutus');"></div>
+										<a class="nav-link desktopMenuLink" id="aboutus" href="About.html">About Us &#9660;</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a id="buyorderbtn" href="javascript:void(0);" class="noselect button">Buy/Order Now</a>
+				</div>
+			
+				<div id="about-us-dropdown" onmouseover="showDropdown(this.id, 'aboutus');" onmouseleave="hideDropdown(this.id, 'aboutus');">
+					<br>
+					<div class="dropdown-item">Who We Are</div>
+					<div class="dropdown-item">Company Profile</div>
+					<div class="dropdown-item">Contact Us</div>
+					<div class="dropdown-item">Mission Statement</div>
+				</div>
+			</div>
+			
+			<div id="image-container">
+			    <div id="images" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%); width: 80.5vw; height: 80.5vw; background: red;">
+			        <table style="width: 100%; height: 100%;">
+                      <tr>
+                        <td style="width: 53vw; height: 40vw;" colspan="2"><div class="overlay" style="top: 0px;"></div><img src="files/imgs/img1.jpg" class="img large-img" /></td>
+                        <td><div class="overlay" style="top: 0px;"></div><div class="overlay" style="top: 20vw;"></div><img src="files/imgs/Lake.jpg" class="img small-img"/><img src="files/imgs/Moutain.jpg" class="img small-img"/></td>
+                      </tr>
+                      <tr>
+                        <td><div class="overlay"></div><img src="files/imgs/Lake.jpg" class="img small-img"/></td>
+                        <td><div class="overlay"></div><img src="files/imgs/Moutain.jpg" class="img small-img"/></td>
+                        <td><div class="overlay"></div><img src="files/imgs/img1.jpg" class="img small-img"/></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><div class="overlay"></div><img src="files/imgs/Lake.jpg" class="img medium-img"/></td>
+                        <td><div class="overlay"></div><img src="files/imgs/Lake.jpg" class="img small-img"/></td>
+                      </tr>
+			        </table>
+			    </div>
+			</div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br>
+		</div>
+    </body>
+</html>

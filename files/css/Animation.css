@@ -1,0 +1,88 @@
+@keyframes becomeVisible {
+    0% { opacity: 0; }
+    100% { opacity: 1.0; }
+}
+@keyframes upArrowSlideUp {
+	100% { top: 9.5%; }
+}
+@keyframes upArrowSlideDown {
+	0% { top: 9.5%; }
+	100% { top: 10%; }
+}
+@keyframes downArrowSlideUp {
+	0% { bottom: 4.5%; }
+	100% { bottom: 5%; }
+}
+@keyframes downArrowSlideDown {
+	100% { bottom: 4.5%; }
+}
+@keyframes bounceDown {
+    0% {
+        top: -5px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes bounceUp {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -5px;
+    }
+}
+.showUnderline div.underline {
+    animation: showUnderline 0.5s 1 ease forwards;
+}
+@keyframes showUnderline {
+    0% {
+        width: 0%;
+        left: 0px;
+    }
+    100% {
+        width: 97%;
+    }
+}
+.hideUnderline div.hide-underline {
+    animation: hideUnderline 0.5s 1 ease forwards;
+}
+@keyframes hideUnderline {
+    0% {
+        width: 97%;
+        left: 0%;
+    }
+    100% {
+        width: 0%;
+        left: 97%;
+    }
+}
+.dropDown {
+    animation: dropDown 0.7s 1 ease forwards;
+}
+@keyframes dropDown {
+    0% {
+        height: 0px;
+		display: none;
+    }
+	99% { display: none; }
+    100% {
+        height: 350px;
+		display: block;
+    }
+}
+.pullUp {
+    animation: pullUp 0.5s 1 ease forwards;
+    background-color: #262626;
+}
+@keyframes pullUp {
+    0% {
+        height: 350px;
+		display: block;
+    }
+	99% { display: block; }
+    100% {
+        height: 0px;
+		display: none;
+    }
+}

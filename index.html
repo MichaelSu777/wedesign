@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title id="title"></title>
+
+		<meta name="keywords" />
+		<meta name="author" />
+		<meta name="charset" charset="UTF-8" />
+		<meta name="description" />
+		<meta name="viewport" />
+		<meta name="json" data-src="files/json/index.json" />
+		
+		<link name="icon" rel="icon" type="image/x-icon" />
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="files/css/Animation.css" type="text/css"/>
+		<link rel="stylesheet" href="files/css/css.css" type="text/css" />
+		<link rel="stylesheet" href="files/css/NavBar.css" type="text/css" />
+		<link rel="stylesheet" href="files/css/HomeScreenCSS.css" type="text/css" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+	
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="files/js/typed.js"></script>
+		<script type="text/javascript" src="files/js/javascript.js"></script>
+		<script type="text/javascript" src="files/js/Animation.js"></script>
+		<script type="text/javascript" src="files/js/HomeScreenJs.js"></script>
+	</head>
+
+	<body>
+		<div id="dropdown-button" style="position:absolute;"></div>
+		
+		<div id="menu-dropdown">
+			<div id="dropdown-items" style="line-height: 14vh;">
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="home-dropdown" href="http://www.WeDesign.com">Home</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="productsandservices-dropdown" href="ProductsServices.html">Products and Services</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="ourwork-dropdown" href="OurWork.html">Our Work</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="aboutus-dropdown" href="About.html">About Us</a>
+				</div>
+				<br><br>
+				<div class="dropdown-dropdown-item">Who We Are</div>
+				<div class="seperator">/</div>
+				<div class="dropdown-dropdown-item">Company Profile</div>
+				<div class="seperator">/</div>
+				<div class="dropdown-dropdown-item">Contact Us</div>
+				<div class="seperator">/</div>
+				<div class="dropdown-dropdown-item">Mission Statement</div>
+			</div>
+		</div>
+		
+		<div id="body-div" style="height: 100%;">
+			<div id="navBar">
+				<div id="menu">
+					<div id="menup2">
+						<div style="width: 600px; display: table;">
+							<img id="logo-img" class="noselect" src="files/Icon/Logo.png" />
+							<ul id="menu-list">
+								<li>
+									<div class="underline-container">
+										<div class="underline"></div>
+										<div class="hide-underline"></div>
+										<a class="nav-link desktopMenuLink" id="home" href="http://www.WeDesign.com">Home</a>
+									</div>
+								</li>
+								<li>
+									<div class="underline-container">
+										<div class="underline"></div>
+										<div class="hide-underline"></div>
+										<a class="nav-link desktopMenuLink" id="productsandservices" href="ProductsServices.html">Products and Services</a>
+									</div>
+								</li>
+								<li>
+									<div class="underline-container">
+										<div class="underline"></div>
+										<div class="hide-underline"></div>
+										<a class="nav-link desktopMenuLink" id="ourwork" href="OurWork.html">Our Work</a>
+									</div>
+								</li>
+								<li>
+									<div class="underline-container">
+										<div class="underline" onmouseover="showDropdown('about-us-dropdown', 'aboutus');"></div>
+										<div class="hide-underline" onmouseover="showDropdown('about-us-dropdown', 'aboutus');"></div>
+										<a class="nav-link desktopMenuLink" id="aboutus" href="About.html">About Us &#9660;</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a id="buyorderbtn" href="javascript:void(0);" class="noselect button">Buy/Order Now</a>
+				</div>
+			
+				<div id="about-us-dropdown" onmouseover="showDropdown(this.id, 'aboutus');" onmouseleave="hideDropdown(this.id, 'aboutus');">
+					<br>
+					<div class="dropdown-item">Who We Are</div>
+					<div class="dropdown-item">Company Profile</div>
+					<div class="dropdown-item">Contact Us</div>
+					<div class="dropdown-item">Mission Statement</div>
+				</div>
+			</div>
+			
+			<div id="header-quote">
+				<div class="type-wrap">
+					<div id="typed-strings"><span id="quote"></span></div>
+					<div id="typed"></div>
+				</div>
+			</div>
+
+			<div id="content">
+				<div class="sect" id="one" style="background-image: url('files/imgs/img1.jpg');">
+					<div id="laptop" style="position: absolute; bottom: 0px; width: 54%; left: -100%;">
+						<img src="files/imgs/laptop.png" style="width: 100%;" />
+						<div id="laptop-content" style="position: absolute; top: 5%; left: 12%; background: purple; width: 76%; height: 83%;">
+						</div>
+					</div>
+					<div id="phone" style="position: absolute; bottom: 0px; width: 15%; left: 200%;">
+						<img src="files/imgs/phone.png" style="width: 100%;" />
+						<div id="phone-content" style="position: absolute; top: 9%; left: 5%; background: green; width: 90%; height: 80%;">
+						</div>
+					</div>
+					<div id="we-content" style="display: inline-block; width: 100%; height: 100%; font-size: 5vw; color: white;">
+						<div class="we-text" id="we-create-text" style="top: 10%;">We Create</div>
+						<div class="we-text" id="we-innovate-text" style="top: 40%;">We Innovate</div>
+						<div class="we-text" id="we-design-text" style="top: 80%;">We Design</div>
+					</div>
+				</div>
+				<div class="sect" id="two" style="background-image: url('files/imgs/Lake.jpg');">
+					<h1 style="font-family: Graphik, sans-serif; position: relative; top: 10%; text-align: center; font-weight: 500;">Be Part of the Process.<br>Every Step of the way.</h1>
+					
+				</div>
+				<div class="sect" id="three" style="background-image: url('files/imgs/Moutain.jpg');">
+					<div id="disp" style="width: 90%; margin-left: auto; margin-right: auto; max-width: 1100px; padding: 80px;">
+						<h2 id="slide3title">Redefining moments.<br>Recreating experiences.</h2>
+						<p id="slide3text" style=" color: #999;">Create the content structure you need in Webflow CMS, design your layout, then bind elements to your site's real content. Whatever you're building, Webflow CMS has the flexibility you need.</p>
+						
+						<a href="OurWork.html" id="slide3link">Click here to see our work <img id="slide3img" src="files/imgs/right.png" /></a>
+						
+						<div class="container">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+							  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							  <li data-target="#myCarousel" data-slide-to="1"></li>
+							  <li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+							  <div class="item active">
+							    <img src="files/imgs/img1.jpg" alt="" style="width:100%;">
+							  </div>
+							
+							  <div class="item">
+							    <img src="files/imgs/Lake.jpg" alt="" style="width:100%;">
+							  </div>
+							
+							  <div class="item">
+							    <img src="files/imgs/Moutain.jpg" alt="" style="width:100%;">
+							  </div>
+							</div>
+							
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							  <span class="glyphicon glyphicon-chevron-left"></span>
+							  <span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							  <span class="glyphicon glyphicon-chevron-right"></span>
+							  <span class="sr-only">Next</span>
+							</a>
+							</div>
+							</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="arrow" id="upArrow">^</div>
+			<div id="navButtonOne" class="scrollNavButton"></div>
+			<div id="navButtonTwo" class="scrollNavButton"></div>
+			<div id="navButtonThree" class="scrollNavButton"></div>
+			<div class="arrow" id="downArrow" style="transform: rotate(180deg);">^</div>
+			
+			<div id="footer">
+				<br><br><br>
+				<img id="footer-logo" src="files/Icon/Logo.png" />
+				<p id="copyright" style="text-align: center;">Copyright &copy; WeDesign 2017</p>
+				<a id="contact-us" href="javascript:void(0);" class="noselect button">Contact Us</a>
+				
+				<div id="social-media-container">
+					<div class="underline-container noselect">
+						<div class="underline"></div>
+						<div class="hide-underline"></div>
+						<a id="Instagram" href="https://www.instagram.com">
+							<img class="social-media noselect" src="files/imgs/instagram.png" />
+						</a>
+					</div>
+					<div class="underline-container noselect" style="top: 20px;">
+						<div class="underline"></div>
+						<div class="hide-underline"></div>
+						<a id="Facebook" href="https://www.facebook.com">
+							<img class="social-media noselect" src="files/imgs/facebook.png" />
+						</a>
+					</div>
+					<div class="underline-container noselect" style="top: 20px;">
+						<div class="underline"></div>
+						<div class="hide-underline"></div>
+						<a id="Twitter" href="https://www.twitter.com">
+							<img class="social-media noselect" src="files/imgs/twitter.png" />
+						</a>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
